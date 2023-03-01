@@ -1,0 +1,16 @@
+domain: yangsijie666.github.com
+layout:
+- go.kubebuilder.io/v3
+projectName: kube-echo
+repo: kube-echo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: yangsijie666.github.com
+  group: gogogo
+  kind: Echo
+  path: kube-echo/api/v1
+  version: v1
+version: "3"

@@ -1,0 +1,34 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - gogogo.yangsijie666.github.com
+  resources:
+  - echoes
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - gogogo.yangsijie666.github.com
+  resources:
+  - echoes/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - gogogo.yangsijie666.github.com
+  resources:
+  - echoes/status
+  verbs:
+  - get
+  - patch
+  - update
