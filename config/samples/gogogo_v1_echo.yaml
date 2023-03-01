@@ -1,0 +1,6 @@
+apiVersion: gogogo.yangsijie666.github.com/v1
+kind: Echo
+metadata:
+  name: echo-sample
+spec:
+  saySomeThing: "testEcho-Hahaha"
